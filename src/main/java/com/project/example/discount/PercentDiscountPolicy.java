@@ -10,6 +10,6 @@ public class PercentDiscountPolicy implements DiscountPolicy {
         if(member.getGrade() == Grade.VIP){
             return (int) (price * percentDiscount);
         }
-        else return price;
+        else return 0;
     }
 }

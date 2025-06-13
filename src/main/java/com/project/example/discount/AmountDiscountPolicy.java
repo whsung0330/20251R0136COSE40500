@@ -8,7 +8,7 @@ public class AmountDiscountPolicy implements DiscountPolicy {
     @Override
     public int discount(Member member, int price) {
         if(member.getGrade()== Grade.VIP) {
-            return price - this.discountAmount;
-        } else return price;
+            return discountAmount;
+        } else return 0;
     }
 }
